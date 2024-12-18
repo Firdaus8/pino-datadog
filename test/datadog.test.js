@@ -76,7 +76,7 @@ test('inserts sends com url and api key', async t => {
   t.ok(stubPost.called)
   t.ok(
     stubPost.calledWithMatch(
-      'https://http-intake.logs.datadoghq.com/v1/input/1234567890',
+      'https://http-intake.logs.us5.datadoghq.com/v1/input/1234567890',
       items,
       { params: {} }
     )
@@ -94,7 +94,7 @@ test('inserts sends eu url and api key', async t => {
   t.ok(stubPost.called)
   t.ok(
     stubPost.calledWithMatch(
-      'https://http-intake.logs.datadoghq.eu/v1/input/1234567890',
+      'https://http-intake.logs.us5.datadoghq.com/v1/input/1234567890',
       items,
       { params: {} }
     )
@@ -118,7 +118,7 @@ test('inserts sends extra parameters ', async t => {
   t.ok(stubPost.called)
   t.ok(
     stubPost.calledWithMatch(
-      'https://http-intake.logs.datadoghq.com/v1/input/1234567890',
+      'https://http-intake.logs.us5.datadoghq.com/v1/input/1234567890',
       items,
       {
         params: {

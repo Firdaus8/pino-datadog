@@ -15,8 +15,8 @@ class Client {
     }
     try {
       const domain = this._options.eu
-        ? 'https://http-intake.logs.datadoghq.eu'
-        : 'https://http-intake.logs.datadoghq.com'
+        ? 'https://http-intake.logs.us5.datadoghq.com'
+        : 'https://http-intake.logs.us5.datadoghq.com'
       const params = {}
       if (this._options.ddsource) {
         params.ddsource = this._options.ddsource
